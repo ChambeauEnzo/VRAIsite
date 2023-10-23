@@ -92,3 +92,77 @@ nav.nav li {
     width: 200px;
     text-align: center;
 }
+
+/* best sells*/
+
+.section-title {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: green;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+}
+
+.best-console {
+      background-color: red;
+      min-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.console-diff {
+    position: relative;
+    background-size: cover;
+    background-position: center;  
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.console1 {
+    background-image: url(../image/xbox.jpg);
+}
+
+.console2 {
+    background-image: url(../image/ps5.jpg);
+}
+
+.console3 {
+    background-image: url(../image/nintendo.jpg);
+}
+
+.console-details {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+}
+
+.console-name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.console-price {
+    color: green;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
