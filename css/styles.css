@@ -1,0 +1,50 @@
+
+* {
+    
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+ /* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    background-color: black
+}
+
+header.header img {
+    width: 100px;
+}
+
+section.top-page {
+    background: url("../image/fond.jpg");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page)*/
+
+.big-title {
+    color: black;
+    font-size: 50px;
+    padding: 20px 50px
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 50px;
+}
+
+nav.nav li {
+    color: white;
+}
