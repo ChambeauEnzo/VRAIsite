@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+}
+
+
+ /* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(141, 158, 67)
+}
+
+header.header img {
+    width: 100px;
+}
+
+section.top-page {
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
