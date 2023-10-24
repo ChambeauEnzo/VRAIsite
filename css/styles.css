@@ -10,7 +10,7 @@ body {
 header.header {
     display: flex;
     align-items: center;
-    background-color: rgb(141, 158, 67)
+    background-color: rgb(255, 255, 255)
 }
 
 header.header img {
@@ -220,6 +220,61 @@ nav.nav li {
     grid-row: 3/5;
 }
 
+/* contactez-moi*/
+
+/* Style général du formulaire */
+#contact_form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style des champs de formulaire */
+.row {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style des messages d'erreur */
+.error_message {
+    color: red;
+}
+
+/* Style du bouton de soumission */
+#submit_button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit_button:hover {
+    background-color: #0056b3;
+}
 
 
 /* pied de page*/
@@ -236,3 +291,10 @@ footer a.cgv {
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
