@@ -166,18 +166,168 @@ p {
      height: 7px;
  }
 
- .best-perf {
-    text-align: center; /* Pour centrer horizontalement */
+ .image-container {
+    display: flex;
+    justify-content: center;
 }
 
-.best-perf-img {
-    max-width: 30%; /* Ajustez la largeur selon vos besoins */
-    margin: 0; /* Supprime la marge autour des images */
+.image-container div {
+    text-align: center;
+    margin: 0 20px; /* Espace entre les images */
+    flex: 1;
 }
 
-.best-below img {
+.image-container img {
     max-width: 100%;
+    height: auto;
 }
 
+.image-caption {
+    margin-top: 10px;
+    text-align: center;
+}
 
+.image-caption:first-child {
+    font-weight: bold;
+    text-align: left;
+}
 
+.bet-item {
+    margin: 40px;
+}
+
+.best-consoless {
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.console-box {
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.console1 {
+    background-image: url(../image/jeu1.jpg);
+}
+
+.console2 {
+    background-image: url(../image/jeu2.jpg);
+}
+
+.console3 {
+    background-image: url(../image/jeu3.jpg);
+}
+
+.console4 {
+    background-image: url(../image/jeu4.jpg);
+}
+
+.console5 {
+    background-image: url(../image/jeu5.jpg);
+}
+
+ /* xbox serie S */
+
+ .console-boxe {
+    background-size: cover;
+    background-position: ;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+ .console6 {
+    background-image: url(../image/jeu6.jpg);
+}
+
+.console7 {
+    background-image: url(../image/jeu7.jpg);
+}
+
+.console8 {
+    background-image: url(../image/jeu8.jpg);
+}
+
+.console9 {
+    background-image: url(../image/jeu9.jpg);
+}
+
+.console10 {
+    background-image: url(../image/jeu10.jpg);
+}
+
+ /* xbox one */
+
+ .console-boxx {
+    background-size: cover;
+    background-position: ;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+ .console11 {
+    background-image: url(../image/);
+}
+
+.console12 {
+    background-image: url(../image/);
+}
+
+.console13 {
+    background-image: url(../image/);
+}
+
+.console14 {
+    background-image: url(../image/);
+}
+
+.console15 {
+    background-image: url(../image/);
+}
+
+ /* accessoire */
+
+ .containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlle {
+    text-align: center;
+}
+
+.image-containerr {
+    display: flex;
+    justify-content: center;
+}
+
+.image-containerr img {
+    max-width: 100%;
+    height: auto;
+}
+
+ /* pied de page */
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+ }
+ 
+ footer a.cgv {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .copyright {
+    text-decoration: none;
+}
