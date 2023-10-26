@@ -1,320 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
-
-body {
-    margin: 0 auto;
+html{
+    scroll-behavior: smooth;
 }
-
-
- /* tete de page */
-
-header.header {
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255)
-}
-
-header.header img {
-    width: 100px;
-}
-
-section.top-page {
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr {
     border: none;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
+    height: 6px;
+    background-color: rgb(117, 117, 117);
 }
 
-/* page de bienvenue (landing page)*/
-
-.big-title {
-    position: left;
-    text-align: center;
-  }
-  
-.big-title img {
-    width: 100%;
-    height: 750px;
-  }
-  
-.texte-superpose {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: white;
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-.texte-superpose h1 {
-    font-size: 40px;
-  }
-  
-
-/* menu de navigation */
-
-nav.nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 400px;
-    margin-left: 50px;
-}
-
-nav.nav li {
-    color: white;
-}
-
-
-/* service */
-
-.service {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px;
-}
-
-.services-item {
-    display: flex;
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
     align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+nav .onglets{
+    margin-top: 2px;
+    margin-left: 60%;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 7px;
+}
+
+header{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    background: url('../image/acceuil1.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
 }
-
-.delivery-icon {
+header h1{
+    font-family: 'Playfair Display', serif;
     font-size: 50px;
-    color: rgb(71, 71, 71);
 }
-
-.service-details {
-    font-weight: 600;
-    width: 200px;
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
     text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
 }
 
-/* best sells*/
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.section-title {
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.main .content .card .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:rgb(70, 70, 70);
+   color:#fff;
+}
+.main .content .card .right img{
+    height:400px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+ 
+
+ /* articles */
+
+ .section-tot {
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    position: relative;
-}
+ }
 
-.section-title::before {
-    content:"";
-    position: absolute;
-    background-color: green;
-    width: 50px;
-    height: 7px;
-    bottom: 0;
-}
+ .section-tot::before {
+     content: "";
+     position: absolute;
+     background-color: rgb(100, 100, 100);
+     width: 50px;
+     height: 7px;
+     
+ }
 
-.bests-items {
-    margin: 100px;
-}
-
-.best-console {
-    background-color: red;
-    min-height: 500px;
+.articles{
+    margin-top: 30px;
+  }
+  .articles .article{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.console-box {
-    position: relative;
-    background-size: cover;
-    background-position: center;    
-    min-width: 350px;
-    height: 500px;
-    flex: 1;
-}
-
-.no-grid {
-    min-width: 350px;
-    height: 500px;
-    flex: 1;
-}
-
-.console1 {
-    background-image: url(../image/xbox.jpg);
-}
-
-.console2 {
-    background-image: url(../image/ps5.jpg);
-}
-
-.console3 {
-    background-image: url(../image/nintendo.jpg);
-}
-
-.console-detail {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: #FFFFFFDF;
-    padding: 5px 20px;
-}
-
-.console-name {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 3px;
-}
-
-.console-price {
-    color: green;
-    font-weight: 800;
-    line-height: 3px;
-    font-size: 14px;
-}
-
-/* nos actualités*/
-
-.all-console {
-    margin: 100px;
-}
-
-.console-grid {
-    display: grid;
-    min-height: 150vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 400px);
-}
-
-.console-grid1 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-
-.console-grid2 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: ; 
-}
-
-.console-grid3 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: ; 
-}
-
-.console-grid4 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: 1;
-}
-
-.console-grid5 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: 2/4;
-    grid-row: 3/5;
-}
-
-.console-grid6 {
-    background-image: url(../image/ps5.jpg);
-    grid-column: 4;
-    grid-row: 3/5;
-}
-
-/* contactez-nous*/
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
-form {
-  padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-}
-form h1 {
-  font-size: 20px;
-}
-form .separation {
-  width: 100%;
-  height: 1px;
-  background-color: #747cdf;
-}
-form .corps-formulaire {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-form .corps-formulaire .groupe {
-  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-form .corps-formulaire .gauche .groupe input {
-  margin-top: 5px;
-  padding: 10px 5px 10px 30px;
-  border: 1px solid #c9c9c9;
-  outline-color: #747cdf;
-  border-radius: 5px;
-}
-form .corps-formulaire .gauche .groupe i {
-  position: absolute; /* positionné par rapport à son parent le plus proche positionné */
-  left: 0;
-  top: 25px;
-  padding: 9px 8px;
-  color: #747cdf;
-}
-form .corps-formulaire .droite {
-  margin-left: 40px;
-}
-form .corps-formulaire .droite .groupe {
-  height: 100%;
-}
-form .corps-formulaire .droite .groupe textarea {
-  margin-top: 5px;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border: 2px solid #747cdf;
-  outline: none;
-  border-radius: 5px;
-  resize: none;
-  height: 72%;
-}
-form .pied-formulaire button {
-  margin-top: 10px;
-  background-color: #747cdf;
-  color: white;
-  font-size: 15px;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-form .pied-formulaire button:hover {
-  transform: scale(1.05);
-}
-
-@media screen and (max-width: 920px) 
-
-  form .corps-formulaire .droite {
-    margin-left: 0px;
-}
+    flex-wrap:wrap;
+    margin-bottom: 30px;
+  }
+  .articles .article .left img{
+    height: 300px;
+    width: 500px;
+  }
+  .articles .article .right {
+    margin-left: 40px;
+    max-width: 50%;
+  }
+  .articles .article .right p.date{
+    color: #7f7e7e;
+  }
+  .articles .article .right p.description{
+    color: #2d2d2d;
+  }
 
 
-/* pied de page*/
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service{
+    margin-right: 200px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
 
-footer {
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
+
+ /* contact */
+
+ @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+ form .separation {
+   width: 100%;
+   height: 1px;
+   background-color: #5f5f5f;
+ }
+
+ form .corps-formulaire {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 20px 100px;
-   font-weight: 600;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+ }
+
+ form .corps-formulaire .groupe {
+   position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ form .corps-formulaire .gauche .groupe input {
+   margin-top: 5px;
+   padding: 10px 5px 10px 30px;
+   border: 1px solid #c9c9c9;
+   outline-color: #757575;
+   border-radius: 5px;
+ }
+
+ form .corps-formulaire .gauche .groupe i {
+   position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+   left: 0;
+   top: 25px;
+   padding: 9px 8px;
+   color: #5c5c5c;
+ }
+
+ form .corps-formulaire .droite {
+   margin-left: 40px;
+ }
+
+ form .corps-formulaire .droite .groupe {
+   height: 100%;
+ }
+
+ form .corps-formulaire .droite .groupe textarea {
+   margin-top: 5px;
+   padding: 10px;
+   background-color: #f1f1f1;
+   border: 2px solid #5e5e5e;
+   outline: none;
+   border-radius: 5px;
+   resize: none;
+   height: 72%;
+ }
+
+ form .pied-formulaire button {
+   margin-top: 10px;
+   background-color: #696969;
+   color: white;
+   font-size: 15px;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   outline: none;
+   cursor: pointer;
+   transition: transform 0.5s;
+ }
+ form .pied-formulaire button:hover {
+   transform: scale(1.05);
+ }
+ 
+ @media screen and (max-width: 920px) 
+ 
+   form .corps-formulaire .droite {
+     margin-left: 0px;
 }
 
-footer a.cgv {
+ /* pied de page */
+
+ footerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+ }
+ 
+ footerr a.cgv {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .copyright {
     text-decoration: none;
-    color: black;
 }
+
+
+
 
 
 

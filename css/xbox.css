@@ -1,73 +1,76 @@
 
-body {
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
 }
-
-
- /* tete de page */
-
-header.header {
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255)
-}
-
-header.header img {
-    width: 100px;
-}
-
-section.top-page {
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr {
     border: none;
-    height: 3px;
-    background-color: rgb(0, 0, 0);
+    height: 6px;
+    background-color: rgb(117, 117, 117);
 }
 
-/* page de bienvenue (landing page)*/
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
 
-.big-title {
-    position: left;
-    text-align: center;
-  }
-  
-.big-title img {
-    width: 100%;
-    height: 750px;
-  }
-  
-.texte-superpose {
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: white;
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-.texte-superpose h1 {
-    font-size: 40px;
-  }
-  
+nav .onglets{
+    margin-top: 2px;
+    margin-left: 60%;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 9px;
+}
 
-/* menu de navigation */
-
-nav.nav {
+header{
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 400px;
-    margin-left: 50px;
+    flex-direction: column;
+    align-items: center;
+    background: url('../image/xbox10.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
 }
-
-nav.nav li {
-    color: white;
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
 }
 
 /* service */
@@ -331,3 +334,4 @@ p {
  .copyright {
     text-decoration: none;
 }
+
