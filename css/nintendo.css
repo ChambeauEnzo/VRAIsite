@@ -278,6 +278,29 @@ p {
     padding: 20px;
 }
 
+.text6 {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.5); /* Couleur de fond grise transparente */
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.text7 {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.5); /* Couleur de fond grise transparente */
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+
 h1 {
     font-size: 24px;
 }
@@ -310,6 +333,69 @@ a {
 
 h3 {
     font-size: 30px;
+}
+
+ /* acessoires */
+
+ .image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container div {
+    text-align: center;
+    margin: 0 20px; /* Espace entre les images */
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image-caption:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.bet-item {
+    margin: 40px;
+}
+
+.best-consoless {
+    background-color: red;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.console-box {
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 400px;
+    flex: 1;
+}
+
+.console1 {
+    background-image: url(../image/accesoire1.jpg);
+}
+
+.console2 {
+    background-image: url(../image/accesoire4.jpg);
+}
+
+.console3 {
+    background-image: url(../image/accesoire2.jpg);
+}
+
+.console4 {
+    background-image: url(../image/accesoire5.jpg);
 }
 
  /* pied de page */

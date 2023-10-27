@@ -208,15 +208,13 @@ p {
 
 .console-box {
     background-size: cover;
-    background-position: center;
+    background-position: ;
     min-width: 350px;
     height: 500px;
     flex: 1;
 }
 
-.console1 {
-    background-image: url(../image/jeu1.jpg);
-}
+
 
 .console2 {
     background-image: url(../image/jeu2.jpg);
@@ -274,24 +272,21 @@ p {
     flex: 1;
 }
 
- .console11 {
-    background-image: url(../image/);
-}
 
 .console12 {
-    background-image: url(../image/);
+    background-image: url(../image/desormais.jpg);
 }
 
 .console13 {
-    background-image: url(../image/);
+    background-image: url(../image/ajout.jpg);
 }
 
 .console14 {
-    background-image: url(../image/);
+    background-image: url(../image/meilleur.jpg);
 }
 
-.console15 {
-    background-image: url(../image/);
+.console1 {
+    background-image: url(../image.jpg);
 }
 
  /* accessoire */
@@ -312,7 +307,7 @@ p {
 }
 
 .image-containerr img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
