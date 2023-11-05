@@ -150,7 +150,8 @@ header button{
     color: #2d2d2d;
   }
 
-
+ /* nos information*/
+ 
 footer{
     margin-top: 40px;
     border-top: 5px solid #6f6f6f;
@@ -170,7 +171,7 @@ footer .services{
     flex-wrap:wrap;
 }
 footer .services .service{
-    margin-right: 200px;
+    margin-right: 120px;
 }
 footer .services .service p{
     max-width: 250px;
@@ -298,13 +299,3 @@ footer #contact{
  .copyright {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-

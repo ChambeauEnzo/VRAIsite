@@ -116,8 +116,8 @@ h1 {
     font-size: 36px;
 }
 
-.red-line {
-    border: 2px solid rgb(247, 0, 0);
+.green-line {
+    border: 2px solid rgb(110, 17, 0);
 }
 
 .consoles-container {
@@ -135,8 +135,8 @@ h1 {
 }
 
 .console img {
-    width: 400px; /* Largeur souhaitée pour toutes les images */
-    height: 260px; /* Hauteur souhaitée pour toutes les images */
+    width: 300px; /* Largeur souhaitée pour toutes les images */
+    height: 270px; /* Hauteur souhaitée pour toutes les images */
     margin-bottom: 10px;
 }
 
@@ -146,13 +146,14 @@ h2 {
 
 p {
     font-size: 16px;
-    color: rgba(133, 28, 28, 0.781);
+    color: rgb(62, 106, 163);
 }
 
 .titt {
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
+
 
  /* vignette */
 
