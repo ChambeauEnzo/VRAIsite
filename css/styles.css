@@ -14,6 +14,7 @@ hr {
     border: none;
     height: 6px;
     background-color: rgb(117, 117, 117);
+    margin: 10px;
 }
 
 nav{
@@ -38,7 +39,7 @@ nav .onglets a{
     color: #000;
     margin-right: 10px;
     border-bottom: 1px solid #000;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 }
 
 header{
@@ -48,18 +49,20 @@ header{
     background: url('../image/acceuil1.jpg');
     background-size: cover;
     color: #fff;
-    padding: 40px;
+    padding: 80px;
 }
 header h1{
     font-family: 'Playfair Display', serif;
     font-size: 50px;
 }
+
 header h4{
     margin-top: -20px;
     font-size: 20px;
     text-align: center;
     border-bottom: 1px solid #fff;
 }
+
 header button{
     padding: 10px 20px;
     background-color: #fff;
@@ -71,6 +74,16 @@ header button{
     font-family: 'Playfair Display', serif;
     cursor: pointer;
 }
+
+ /* video et son*/
+
+ .video {
+  display: flex;
+  justify-content: center; /* Centre la vidéo horizontalement */
+  align-items: center; /* Centre la vidéo verticalement */
+}
+
+ /*image*/
 
 .main{
     margin-top: 40px;
@@ -97,9 +110,7 @@ header button{
     margin-top: 5px;
 }
 
- 
-
- /* articles */
+ /* icone */
 
  .section-tot {
     font-size: 50px;
@@ -116,7 +127,7 @@ header button{
      
  }
 
-.articles{
+  .articles{
     margin-top: 30px;
   }
   .articles .article{
@@ -145,7 +156,7 @@ footer{
     border-top: 5px solid #6f6f6f;
     background-color: rgb(0, 0, 0);
     color: #fff;
-    padding: 30px 100px;;
+    padding: 20px 80px;;
 }
 footer h1{
     font-family: 'Playfair Display', serif;
@@ -162,7 +173,7 @@ footer .services .service{
     margin-right: 200px;
 }
 footer .services .service p{
-    max-width: 300px;
+    max-width: 250px;
 }
 footer #contact{
     color: rgb(181, 181, 181);

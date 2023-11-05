@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 6px;
+    background-color: rgb(117, 117, 117);
+    margin: 10px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+nav .onglets{
+    margin-top: 2px;
+    margin-left: 60%;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 9px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../image/acceuil1.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 80px;
+}
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+ /* cv */
+
+label {
+    font-size: 20px; /* Ajustez la taille de la police */
+    padding: 20px 30px; /* Ajustez la marge intérieure pour la largeur et la hauteur */
+}
+
+
+ #conteneur-image {
+    display: none;
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+    max-height: 100%; /* Pour s'assurer que l'image ne dépasse pas la hauteur du conteneur */   
+ }
+#toggle-bouton:checked ~ #conteneur-image {
+    display: block;
+}
+
+#conteneur-image1 {
+    display: none;
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+    max-height: 100%; /* Pour s'assurer que l'image ne dépasse pas la hauteur du conteneur */
+}
+
+#toggle-bouton1:checked ~ #conteneur-image1 {
+    display: block;
+}
